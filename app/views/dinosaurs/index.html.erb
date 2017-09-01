@@ -1,0 +1,11 @@
+<!-- app/views/dinosaurs/index.html.erb -->
+
+<h1>Dinosaurs</h1>
+
+<% @dinosaurs.each do |dinosaur| %>
+  <ul>
+    <li><%= dinosaur.name %></li>
+    <li><img src="<%= dinosaur.image_url %>"</li>
+  </ul>
+
+<% end %>
